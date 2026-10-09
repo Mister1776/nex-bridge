@@ -1,0 +1,31 @@
+name: NEX Relay – automatische Auftragsabfrage
+
+on:
+  push:
+    paths:
+      - '.github/workflows/nex-relay-poll.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '3,13,23,33,43,53 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nex-relay-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: NEX-Auftragsabfrage auf finnli.info
+        shell: bash
+        run: |
+          set -euo pipefail
+          response=$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 --retry 0 \
+            --header 'Accept: application/json' \
+            'https://finnli.info/nex/relay/poll.php')
+          echo "$response"
+          echo "$response" | jq -e '.ok == true' >/dev/null
