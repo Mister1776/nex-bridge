@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "release": "nex_design_20261009_01",
+  "files": [
+    {
+      "path": "style.css",
+      "source": "release/style.css",
+      "sha256": "dfc4c211fc3e9fdb00729d1979519120854891d8d2e48ecc3a66d04ed04def62",
+      "bytes": 4568
+    },
+    {
+      "path": "brain/style.css",
+      "source": "release/brain-style.css",
+      "sha256": "69bc4c4e630f88bddc443640500cc7c5266caa65ee8ff3f1146e8aa6adae00a6",
+      "bytes": 756
+    },
+    {
+      "path": "assets/nex-version.txt",
+      "source": "release/nex-version.txt",
+      "sha256": "dd7bc6a02db6fcbe21129df381600d0c4e2a9b596a3481df8ba494cbfd855574",
+      "bytes": 70
+    }
+  ]
+}
