@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "commands": [
+    {
+      "id": "nex-relay-test-20261009-01",
+      "type": "create_task",
+      "title": "Verbindungstest: NEX hat diesen Auftrag eigenständig aus ChatGPT über GitHub übermittelt."
+    }
+  ]
+}
