@@ -1,0 +1,7 @@
+/* NEX Brain - modern dark UI, compatible with main theme */
+.brain{max-width:900px;margin:42px auto 65px}.brain .panel{margin-top:20px;overflow-wrap:anywhere}
+.brain-check{display:flex;align-items:flex-start;gap:12px;margin:14px 0 18px}.brain-check input{width:20px;flex:0 0 20px;margin-top:3px}
+.brain-result{border:1px solid var(--line);padding:18px;margin:18px 0;border-radius:15px;background:#0b1929}
+.brain-result pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}.brain-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.brain select{width:100%;border-radius:13px;background:#0a1422;color:var(--text);border:1px solid #385067;padding:12px}
+.brain button[disabled]{opacity:.5;cursor:not-allowed}.brain a{word-break:break-word}
